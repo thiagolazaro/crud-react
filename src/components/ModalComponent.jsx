@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 
-const ModelComponent = ({ data, setdata, dataEdit, isOpen, onClose }) => {
+const ModalComponent = ({ data, setdata, dataEdit, isOpen, onClose }) => {
   const [name, setName] = useState(dataEdit.name || "");
   const [email, setEmail] = useState(dataEdit.email || "");
 
@@ -83,4 +83,6 @@ const ModelComponent = ({ data, setdata, dataEdit, isOpen, onClose }) => {
       </Modal>
     </>
   );
-}
+};
+
+export default ModalComponent;

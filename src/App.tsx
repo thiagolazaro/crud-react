@@ -32,7 +32,6 @@ const App = () => {
      : [];
 
      setData(db_clientes);
-
   }, [setData]);
 
   const handleRemove = (email) => {
